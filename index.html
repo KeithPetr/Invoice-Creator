@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Invoice Creator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="invoice-container">
+        <header class="header">
+          <h1 class="title">Invoice Creator</h1>
+          <p class="subheading">Thanks for choosing GoodCorp, LLC!</p>
+        </header>
+        <section class="main-section">
+          <div class="input-section">
+            <input type="text" class="text-input" placeholder="Enter Task" />
+            <select>
+              <option value="10">$10</option>
+              <option value="20">$20</option>
+              <option value="30">$30</option>
+            </select>
+            <button type="button" class="add-btn"></button>
+          </div>
+          <div class="task-section">
+            <div class="column-headings">
+              <p class="task-heading">Task</p>
+              <p class="total-heading">Total</p>
+            </div>
+            <div class="task-list" id="task-list"></div>
+            <div class="total-headings">
+              <p class="notes">Notes</p>
+              <p class="total-amount"></p>
+            </div>
+            <div class="total-amount-display"></div>
+          </div>
+          <button type="button" class="submit-btn" id="submit-btn">
+            Send Invoice
+          </button>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

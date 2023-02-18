@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 95%;
+    margin: 3em auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ----- PROJECT TITLE AND SUBHEADING */
+
+.header {
+    width: 100%;
+    text-align: center;
+    background: #3A69D2;
+    padding: 2em 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* ----- DROP DOWN, INPUT FIELD, ADD BUTTON ----- */
+
+.main-section {
+    display: flex;
+    justify-content: ;
+}
+
+.input-section {
+    width: 90%;
+
+}
+
+.add-btn {
+    background: url("images/Plus-Sign.svg") center no-repeat;
+    width: 50px;
+    height: 50px;
+}
