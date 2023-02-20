@@ -23,13 +23,13 @@
         </header>
         <section class="main-section">
           <div class="input-section">
-            <input type="text" class="text-input" placeholder="Enter Task" />
-            <select>
+            <input type="text" class="text-input" id="text-input" placeholder="Enter Task" />
+            <select id="option-value">
               <option value="10">$10</option>
               <option value="20">$20</option>
               <option value="30">$30</option>
             </select>
-            <button type="button" class="add-btn"></button>
+            <button type="button" class="add-btn" id="add-btn"></button>
           </div>
           <div class="task-section">
             <div class="column-headings">
@@ -39,12 +39,12 @@
             <div class="task-list" id="task-list"></div>
             <div class="total-headings">
               <p class="notes">Notes</p>
-              <p class="total-amount"></p>
+              <p class="total-amount">Total Amount</p>
             </div>
-            <div class="total-amount-display"></div>
+            <div class="total-amount-display" id="total-amount-display">$0</div>
           </div>
-          <button type="button" class="submit-btn" id="submit-btn">
-            Send Invoice
+          <button type="button" class="send-btn" id="send-btn">
+            ✉️ Send Invoice
           </button>
         </section>
       </div>

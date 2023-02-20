@@ -1,47 +1,160 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .container {
-    width: 95%;
-    margin: 3em auto;
-    border: 2px solid black;
-    border-radius: 5px;
-    color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
+  width: 95%;
+  margin: 3em auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  min-width: 470px;
 }
 
 /* ----- PROJECT TITLE AND SUBHEADING */
 
 .header {
-    width: 100%;
-    text-align: center;
-    background: #3A69D2;
-    padding: 2em 0;
+  width: 100%;
+  text-align: center;
+  background: #3a69d2;
+  padding: 2em 0;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
+}
+
+.subheading {
+  margin-bottom: 0;
 }
 
 /* ----- DROP DOWN, INPUT FIELD, ADD BUTTON ----- */
 
 .main-section {
-    display: flex;
-    justify-content: ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1f2937;
 }
 
 .input-section {
-    width: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
 
+.text-input {
+  width: 70%;
+  padding: 0.5em;
+  font-size: 1.2rem;
+}
+
+select {
+  width: 18%;
+  font-size: 1.2rem;
 }
 
 .add-btn {
-    background: url("images/Plus-Sign.svg") center no-repeat;
-    width: 50px;
-    height: 50px;
+  background: url("images/Plus-Sign.svg") center no-repeat;
+  background-size: 60%;
+  background-color: #3a69d2;
+  border: none;
+  width: 12%;
+}
+
+.add-btn:hover {
+    cursor: pointer;
+}
+
+/* ------ TOTALS AND LIST OF TASKS SELECTED ----- */
+
+.task-section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+}
+
+.column-headings {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.output-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+    width: 100%;
+    border: 1px solid purple;
+}
+
+.output-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-item {
+margin-right: .75em;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    padding: 0;
+    font-size: .7rem;
+}
+
+.remove-btn:hover {
+    color: #d32121;
+    cursor: pointer;
+}
+
+.total-headings {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #C3C6DB;
+  margin-top: 2em;
+}
+
+.total-amount-display {
+  align-self: flex-end;
+}
+
+.total-amount-display > p {
+    margin: 0;
+}
+
+/* ----- Send Button ----- */
+
+.send-btn {
+  background: #3a69d2;
+  color: #ffffff;
+  padding: 0.5em 1em;
+  width: 90%;
+  font-size: 1.2rem;
+  margin-bottom: .5em;
+  border-radius: 7px;
+  border: none;
+}
+
+.send-btn:hover {
+    cursor: pointer;
+    background: #38BDF8;
+    text-shadow: 1px 1px 1px #232324;
+}
+
+.send-btn:active, .add-btn:active, .remove-btn:active {
+    transform: translateY(2px);
 }
