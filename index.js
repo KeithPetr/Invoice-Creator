@@ -10,6 +10,8 @@ const darkModeBtn = document.querySelector('.dark-mode-btn');
 let taskArray = [];
 let totalAmountArray = [];
 
+// ----- Add task to task list by clicking the plus sign -----
+
 function addTasks() {
   if (inputEl.value === "" || taskArray.includes(inputEl.value)) {
   } else {
@@ -18,6 +20,8 @@ function addTasks() {
     renderArray();
   }
 }
+
+// ------ Create the innerHTML to show each item under the tasks heading
 
 function renderArray() {
   let string = "";
@@ -35,7 +39,6 @@ function renderArray() {
     `;
     inputEl.value = "";
   }
-  console.log(taskArray);
   if (totalAmountArray.length === 0) {
     totalAmountEl.innerHTML = `
     <p></p>
@@ -54,13 +57,14 @@ function renderArray() {
 
 document.addEventListener("click", function (e) {
   if (e.target.classList.contains("remove-btn")) {
-    console.log(e.target.dataset.removeid);
     const indexOfItem = e.target.dataset.removeid;
     taskArray.splice(indexOfItem, 1);
     totalAmountArray.splice(indexOfItem, 1);
     renderArray();
   }
 });
+
+// ------ Clears the arrays and display elements ------
 
 function sendInvoice() {
   taskArray = [];
@@ -72,6 +76,8 @@ function sendInvoice() {
   <p class="sum">$0</p>
   `;
 }
+
+// ------ Switch between dark and light mode ------
 
 function toggleDarkMode() {
   const body = document.querySelector('body');
